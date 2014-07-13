@@ -32,7 +32,6 @@ dt<-as.POSIXct(hc$DateTime)
 ##
 ##Plot  sub metering
 ##
-max_y<-max(hc$Sub_metering_1,hc$Sub_metering_2,hc$Sub_metering_3)
 png(filename="~/Documents/plot3.png",height=480,width=480)
 plot(dt,hc$Sub_metering_1, type="l", col='black',ylab="Energy sub metering",xlab="")
 lines(dt,hc$Sub_metering_2, type="l", col='red')
