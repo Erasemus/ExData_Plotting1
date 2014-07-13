@@ -5,7 +5,7 @@
 ##
 hr<-read.table( "~/Downloads/household_power_consumption.txt",nrows=1,sep=";",header=T)
 ##
-## Get the data we want
+## Get the data we want and set the column names 
 ##
 hc <- read.table(pipe('grep  "^[1-2]/2/2007" ~/Downloads/household_power_consumption.txt'),
                  sep=';',col.names=colnames(hr))
